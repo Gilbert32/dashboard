@@ -1,5 +1,5 @@
+import {Location} from '../Location';
 import { Component, OnInit } from '@angular/core';
-import {Location} from '../location';
 import {Widget3SService} from '../widget3-s.service';
 
 @Component({
