@@ -1,0 +1,16 @@
+.MarketStock {
+  height: 100%;
+  width: 100%;
+}
+
+.UP, .DOWN {
+  width: 100px; height: 100px; position: absolute; left: 50%; margin-left: -80px; top: 50%; margin-top: -60px;
+}
+
+.green {
+  background-color: rgba(0,255,41,0.61);
+}
+
+.red {
+  background-color: rgba(255,0,0,0.61);
+}

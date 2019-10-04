@@ -1,0 +1,13 @@
+<gridster [options]="options" style="background-color: whitesmoke">
+  <gridster-item [item]="items[0]" class="Component1" *ngIf="widgetService.isBigger ? 'green' : 'red'" >
+    <app-widget1></app-widget1>
+  </gridster-item>
+
+  <gridster-item [item]="items[1]" class="Component1">
+    <app-widget2></app-widget2>
+  </gridster-item>
+
+  <gridster-item [item]="items[2]" class="Component1" style=" width: 100%; height: 100%; background-color: rgba(6,202,255,0.61)">
+    <app-widget3></app-widget3>
+  </gridster-item>
+</gridster>

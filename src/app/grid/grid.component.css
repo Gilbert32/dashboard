@@ -1,0 +1,16 @@
+gridster {
+  width: 99.99vw;
+  height: 93.2vh;
+}
+
+.Component1 {
+  border-radius: 10px;
+}
+
+.green {
+  background-color: rgba(0,255,41,0.61);
+}
+
+.red {
+  background-color: rgba(255,0,0,0.61);
+}
