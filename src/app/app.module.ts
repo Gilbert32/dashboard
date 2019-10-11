@@ -13,8 +13,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {Ng2FittextModule} from 'ng2-fittext';
 import { Widget2Component } from './widget2/widget2.component';
 import { Widget3Component } from './widget3/widget3.component';
-import {Widget3SService} from './widget3-s.service';
+import {Widget3SService} from './Services/widget3-s.service';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatButtonModule} from '@angular/material/button';
+import {FormsModule} from '@angular/forms';
+import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatIconModule,
     HttpClientModule,
     Ng2FittextModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatButtonModule,
+    FormsModule,
+    MatListModule,
+    MatCheckboxModule,
+    DragDropModule
   ],
   providers: [Widget3SService],
   bootstrap: [AppComponent]

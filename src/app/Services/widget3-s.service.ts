@@ -7,10 +7,10 @@ export class Widget3SService {
   url;
 
   constructor(public http: HttpClient) {
-    this.url = 'http://api.openweathermap.org/data/2.5/weather?q=';
+    this.url = 'http://api.openweathermap.org/data/2.5/forecast?q=';
   }
 
   getWeather(city) {
-    return this.http.get(this.url + city + '&APPID=' + this.apiKey );
+    return this.http.get(this.url + city + '&cnt=5' + '&APPID=' + this.apiKey );
   }
 }

@@ -1,1 +1,18 @@
-<mat-spinner style="width: 100px; height: 100px; position: absolute; left: 50%; margin-left: -50px; top: 50%; margin-top: -50px"></mat-spinner>
+<mat-toolbar color="primary" style="height: 35px">To-Do
+  <button mat-icon-button style="margin-left: auto; margin-right: -11px">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-list class="list" cdkDropList (cdkDropListDropped)="drop($event)">
+  <mat-list-item class="item" cdkDrag>
+    <mat-checkbox (click)="line()" class="checkbox">{{movies[0]}}</mat-checkbox>
+    <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
+  </mat-list-item>
+  <mat-divider class="divider"></mat-divider>
+
+  <mat-list-item class="item" cdkDrag>
+    <mat-checkbox (click)="line()" class="checkbox">{{movies[1]}}</mat-checkbox>
+    <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
+  </mat-list-item>
+  <mat-divider class="divider"></mat-divider>
+</mat-list>
