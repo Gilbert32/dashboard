@@ -30,6 +30,6 @@ export class Widget2Component implements OnInit {
   }
 
   line() {
-    document.body.style.textDecoration = ;
+    /*document.body.style.textDecoration = ;*/
   }
 }
