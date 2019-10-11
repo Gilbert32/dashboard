@@ -4,9 +4,13 @@
   </button>
 </mat-toolbar>
 <mat-list class="list" cdkDropList (cdkDropListDropped)="drop($event)">
-  <mat-list class="list" cdkDropList (cdkDropListDropped)="drop($event)">
     <mat-list-item class="item" cdkDrag>
       <mat-checkbox class="checkbox">{{List[0]}}</mat-checkbox>
+      <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
+    <mat-list-item class="item" cdkDrag>
+      <mat-checkbox class="checkbox">{{List[1]}}</mat-checkbox>
       <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
     </mat-list-item>
     <mat-divider class="divider"></mat-divider>
