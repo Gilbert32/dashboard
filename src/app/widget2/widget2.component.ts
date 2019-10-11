@@ -1,35 +1,40 @@
-import {Component, OnInit} from '@angular/core';
-import {animate} from '@angular/animations';
+import {Component, } from '@angular/core';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+import {MatDialog} from '@angular/material';
+import {DialogComponent} from '../dialog/dialog.component';
+
+export interface DialogData {
+  todo: string;
+}
 
 @Component({
   selector: 'app-widget2',
   templateUrl: './widget2.component.html',
   styleUrls: ['./widget2.component.css']
 })
-export class Widget2Component implements OnInit {
+export class Widget2Component {
 
-  movies = [
-    'Episode I - The Phantom Menace',
-    'Episode II - Attack of the Clones',
-    'Episode III - Revenge of the Sith',
-    'Episode IV - A New Hope',
-    'Episode V - The Empire Strikes Back',
-    'Episode VI - Return of the Jedi',
-    'Episode VII - The Force Awakens',
-    'Episode VIII - The Last Jedi'
+  constructor(public dialog: MatDialog) {}
+
+  List = [
   ];
 
+  todo: string;
+
   drop(event: CdkDragDrop<string[]>) {
-    moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
+    moveItemInArray(this.List, event.previousIndex, event.currentIndex);
   }
 
-  constructor() { }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogComponent, {
+      width: '250px',
+      data: {todo: this.todo}
+    });
 
-  ngOnInit() {
-  }
-
-  line() {
-    /*document.body.style.textDecoration = ;*/
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.todo = result;
+      this.List.push(this.todo);
+    });
   }
 }

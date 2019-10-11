@@ -20,6 +20,10 @@ import {FormsModule} from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     GridComponent,
     Widget1Component,
     Widget2Component,
-    Widget3Component
+    Widget3Component,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -43,9 +48,13 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     FormsModule,
     MatListModule,
     MatCheckboxModule,
-    DragDropModule
+    DragDropModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [Widget3SService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent]
 })
 export class AppModule { }

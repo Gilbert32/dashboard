@@ -1,18 +1,13 @@
-<mat-toolbar color="primary" style="height: 35px">To-Do
-  <button mat-icon-button style="margin-left: auto; margin-right: -11px">
+<mat-toolbar style="height: 35px; background-color: orange">To-Do
+  <button mat-icon-button style="margin-left: auto; margin-right: -11px" (click)="openDialog()">
     <mat-icon>add</mat-icon>
   </button>
 </mat-toolbar>
 <mat-list class="list" cdkDropList (cdkDropListDropped)="drop($event)">
-  <mat-list-item class="item" cdkDrag>
-    <mat-checkbox (click)="line()" class="checkbox">{{movies[0]}}</mat-checkbox>
-    <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
-  </mat-list-item>
-  <mat-divider class="divider"></mat-divider>
-
-  <mat-list-item class="item" cdkDrag>
-    <mat-checkbox (click)="line()" class="checkbox">{{movies[1]}}</mat-checkbox>
-    <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
-  </mat-list-item>
-  <mat-divider class="divider"></mat-divider>
+  <mat-list class="list" cdkDropList (cdkDropListDropped)="drop($event)">
+    <mat-list-item class="item" cdkDrag>
+      <mat-checkbox class="checkbox">{{List[0]}}</mat-checkbox>
+      <mat-icon class="handle" cdkDragHandle>reorder</mat-icon>
+    </mat-list-item>
+    <mat-divider class="divider"></mat-divider>
 </mat-list>
