@@ -24,6 +24,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { DialogComponent } from './dialog/dialog.component';
+import { DynamicDirective } from './Directives/dynamic.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DialogComponent } from './dialog/dialog.component';
     Widget1Component,
     Widget2Component,
     Widget3Component,
-    DialogComponent
+    DialogComponent,
+    DynamicDirective
   ],
   imports: [
     BrowserModule,
