@@ -11,7 +11,7 @@ export class GridSService {
 
     this.items = [{x: 0, y: 0, rows: 2, cols: 2},
       {x: 2, y: 0, rows: 2, cols: 2, minItemCols: 2},
-      {x: 4, y: 0, rows: 2, cols: 1, maxItemCols: 5, minItemRows: 2, maxItemRows: 2}];
+      {x: 4, y: 0, rows: 2, cols: 1, maxItemCols: 5, minItemRows: 2, maxItemRows: 5}];
 
     try {
       this.items = JSON.parse(localStorage.getItem(this.dash));
