@@ -17,8 +17,7 @@ export class Widget2Component {
   constructor(public dialog: MatDialog) {
   }
 
-  List = [
-  ];
+  List = [];
 
   todo: string;
 

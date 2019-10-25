@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { GridSService } from './grid-s.service';
+import {GridSService} from './grid-s.service';
 
 describe('GridSService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

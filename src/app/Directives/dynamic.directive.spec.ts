@@ -1,4 +1,4 @@
-import { DynamicDirective } from './dynamic.directive';
+import {DynamicDirective} from './dynamic.directive';
 
 describe('DynamicDirective', () => {
   it('should create an instance', () => {

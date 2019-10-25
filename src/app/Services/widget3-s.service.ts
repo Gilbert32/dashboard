@@ -11,6 +11,6 @@ export class Widget3SService {
   }
 
   getWeather(city) {
-    return this.http.get(this.url + city + '&cnt=5' + '&APPID=' + this.apiKey );
+    return this.http.get(this.url + city + '&cnt=5' + '&APPID=' + this.apiKey);
   }
 }

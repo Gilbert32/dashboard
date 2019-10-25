@@ -1,10 +1,12 @@
 <div class="MarketStock" [ngClass]="widgetService.isBigger ? 'green': 'red' ">
   <div *ngIf="widgetService.isBigger" class="UP">
     <span style="font-size: 6vw">{{widgetService.randomValue}}</span>
-    <mat-icon svgIcon="up" aria-hidden="false" style="width: 100px; height: 100px; position: absolute; left: 50%; margin-left: 10px; top: 50%; margin-top: -40px;"></mat-icon>
+    <mat-icon svgIcon="up" aria-hidden="false"
+              style="width: 100px; height: 100px; position: absolute; left: 50%; margin-left: 10px; top: 50%; margin-top: -40px;"></mat-icon>
   </div>
   <div *ngIf="!widgetService.isBigger" class="DOWN">
     <span style="font-size: 6vw">{{widgetService.randomValue}}</span>
-    <mat-icon svgIcon="down" aria-hidden="false" style="width: 100px; height: 100px; position: absolute; left: 50%; margin-left: 10px; top: 50%; margin-top: -40px"></mat-icon>
+    <mat-icon svgIcon="down" aria-hidden="false"
+              style="width: 100px; height: 100px; position: absolute; left: 50%; margin-left: 10px; top: 50%; margin-top: -40px"></mat-icon>
   </div>
 </div>

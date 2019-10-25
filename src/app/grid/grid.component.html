@@ -1,5 +1,5 @@
 <gridster [options]="gridService.options" style="background-color: whitesmoke">
-  <gridster-item [item]="gridService.items[0]" class="Component1" *ngIf="widgetService.isBigger ? 'green' : 'red'" >
+  <gridster-item [item]="gridService.items[0]" class="Component1" *ngIf="widgetService.isBigger ? 'green' : 'red'">
     <app-widget1></app-widget1>
   </gridster-item>
 
@@ -7,7 +7,8 @@
     <app-widget2></app-widget2>
   </gridster-item>
 
-  <gridster-item [item]="gridService.items[2]" class="Component1" style=" width: 100%; height: 100%; background-color: rgba(6,202,255,0.61)">
+  <gridster-item [item]="gridService.items[2]" class="Component1"
+                 style=" width: 100%; height: 100%; background-color: rgba(6,202,255,0.61)">
     <app-widget3></app-widget3>
   </gridster-item>
 </gridster>

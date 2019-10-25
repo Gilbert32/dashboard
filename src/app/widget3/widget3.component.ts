@@ -1,6 +1,5 @@
-
 import {Location} from '../Models/Location';
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Widget3SService} from '../Services/widget3-s.service';
 import {GridSService} from '../Services/grid-s.service';
 

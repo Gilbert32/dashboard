@@ -1,4 +1,4 @@
-import {Injectable, OnInit} from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class Widget1ServiceService {
   constructor() {
     this.randomNumComparator = () => {
       this.previousRandomValue = this.randomValue;
-      this.randomValue = this.randomValue = this.List[Math.floor(Math.random() * this.List.length )];
+      this.randomValue = this.randomValue = this.List[Math.floor(Math.random() * this.List.length)];
       if (this.previousRandomValue < this.randomValue) {
         this.isBigger = true;
       } else {

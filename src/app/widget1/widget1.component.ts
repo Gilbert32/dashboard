@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Widget1ServiceService} from '../Services/widget1-service.service';
+import {Component, OnInit} from '@angular/core';
+import {Widget1ServiceService} from '../Services/widget1-service.service';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry} from '@angular/material/icon';
 
