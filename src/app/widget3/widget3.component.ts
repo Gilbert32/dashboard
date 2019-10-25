@@ -17,7 +17,7 @@ export class Widget3Component implements OnInit {
     city: {
       name: 'Beirut'
     },
-    list: null,
+    list: [],
   };
 
   constructor(private myWidgetComponent: Widget3SService, private gridService: GridSService) {
