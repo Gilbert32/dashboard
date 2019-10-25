@@ -6,16 +6,14 @@ import {GridsterConfig, GridsterItem} from 'angular-gridster2';
 })
 
 export class GridSService {
+  static dashboard: GridsterItem[];
+  items = [{x: 0, y: 0, rows: 2, cols: 2},
+    {x: 2, y: 0, rows: 2, cols: 2, minItemCols: 2},
+    {x: 4, y: 0, rows: 2, cols: 1, maxItemCols: 5, minItemRows: 2, maxItemRows: 5}];
 
   constructor() {
-
-    this.items = [{x: 0, y: 0, rows: 2, cols: 2},
-      {x: 2, y: 0, rows: 2, cols: 2, minItemCols: 2},
-      {x: 4, y: 0, rows: 2, cols: 1, maxItemCols: 5, minItemRows: 2, maxItemRows: 5}];
-
-    try {
-      this.items = JSON.parse(localStorage.getItem(this.dash));
-    } catch {
+    this.items = JSON.parse(localStorage.getItem(this.dash));
+    if (this.items === null) {
       this.items = [{x: 0, y: 0, rows: 2, cols: 2},
         {x: 2, y: 0, rows: 2, cols: 2, minItemCols: 2},
         {x: 4, y: 0, rows: 2, cols: 1, maxItemCols: 5, minItemRows: 2, maxItemRows: 2}];
@@ -42,12 +40,15 @@ export class GridSService {
       }
     };
   }
-  static dashboard: GridsterItem[];
+
 
   public options: GridsterConfig;
-  public items: GridsterItem[];
 
   dash = 'dashboard';
+
+  public getItems() {
+    return this.items;
+  }
 
   Save() {
     console.log(GridSService.dashboard);
