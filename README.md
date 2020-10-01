@@ -1,6 +1,6 @@
 # Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+A test angular project with a dashboard, resizable widgets, and save-able dashboard settings.
 
 ## Development server
 
