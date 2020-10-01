@@ -4,7 +4,8 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {MatTableModule, MatToolbarModule} from '@angular/material';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import {GridsterModule} from 'angular-gridster2';
 import {GridComponent} from './grid/grid.component';
 import {Widget1Component} from './widget1/widget1.component';

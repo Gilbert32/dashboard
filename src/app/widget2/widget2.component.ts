@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import {DialogComponent} from '../dialog/dialog.component';
 
 export interface DialogData {

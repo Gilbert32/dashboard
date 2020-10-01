@@ -9,7 +9,7 @@ import {GridSService} from './Services/grid-s.service';
 export class AppComponent implements OnInit {
   title = 'Dashboard';
 
-  constructor(private gridService: GridSService) {
+  constructor(public gridService: GridSService) {
   }
 
   ngOnInit(): void {
