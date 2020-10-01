@@ -9,7 +9,7 @@ export interface City {
 
 export interface List {
   [index: number]: {
-    dt_txt: bigint;
+    dt_txt: number;
     main: Main;
     weather: Weather;
   };

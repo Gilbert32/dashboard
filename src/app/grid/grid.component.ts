@@ -11,7 +11,7 @@ import {GridSService} from '../Services/grid-s.service';
 })
 export class GridComponent implements OnInit {
   items: Array<any>;
-  constructor(private widgetService: Widget1ServiceService, private gridService: GridSService) {
+  constructor(public widgetService: Widget1ServiceService, public gridService: GridSService) {
   }
 
   ngOnInit(): void {

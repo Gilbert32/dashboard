@@ -12,7 +12,7 @@ import {MatIconRegistry} from '@angular/material/icon';
 
 export class Widget1Component implements OnInit {
 
-  constructor(private widgetService: Widget1ServiceService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(public widgetService: Widget1ServiceService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'up',
       sanitizer.bypassSecurityTrustResourceUrl('assets/trending_up-24px.svg'));
